@@ -1,0 +1,78 @@
+header {
+  background-color: rgb(246, 245, 240);
+}
+
+header>.inner {
+  margin: 0 auto;
+  width: 1100px;
+  height: 120px;
+  position: relative;
+}
+
+header>.inner>a {
+  position: absolute;
+  height: 75px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+
+header>.inner>.top-right {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  display: flex;
+}
+
+header>.inner>.top-right>ul {
+  display: flex;
+  list-style: none;
+}
+
+header>.inner>.top-right>ul>li {
+  position: relative;
+}
+
+header>.inner>.top-right>ul>li>a{
+  display: inline-block;
+  padding: 11px 16px;
+  text-decoration: none;
+  color: rgb(101, 101, 101);
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+}
+
+header>.inner>.top-right>ul>li:not(:nth-child(1))::before {
+  content:"";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 1px;
+  height: 12px;
+  background-color: rgb(229, 229, 229);
+}
+
+header>.inner>.bottom-right {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+header>.inner>.bottom-right>ul {
+  display: flex;
+  list-style: none;
+  color: rgb(51, 51, 51);
+}
+
+header>.inner>.bottom-right>ul>li {
+  padding: 10px 20px 34px;
+}
+
+
+header>.inner>.bottom-right>ul>li>.nav-title {
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+}
